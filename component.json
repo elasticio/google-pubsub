@@ -9,5 +9,15 @@
         "viewClass": "TextFieldView"
       }
     }
+  },
+  "actions": {
+    "pub": {
+      "title": "Pub",
+      "main": "./lib/actions/pub.js",
+      "metadata": {
+        "in": "./lib/schemas/pub.in.json",
+        "out": "./lib/schemas/pub.out.json"
+      }
+    }
   }
 }
