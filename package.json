@@ -1,0 +1,40 @@
+{
+  "name": "google-pubsub-component",
+  "version": "0.0.0",
+  "description": "Interact with Google Pub-Sub API",
+  "homepage": "https://www.elastic.io",
+  "author": {
+    "name": "elastic.io GmbH",
+    "email": "info@elastic.io",
+    "url": "http://elastic.io"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "google",
+    "api",
+    "pubsub",
+    "elsaticio",
+    "elasticio-component"
+  ],
+  "dependencies": {
+    "elasticio-node": "0.0.5",
+    "elasticio-sailor-nodejs": "1.1.2",
+    "google-cloud": "^0.41.2",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-config-xo-space": "^0.10.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "elastcio/google-pubsub-component",
+  "license": "Apache-2.0"
+}

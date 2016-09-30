@@ -1,0 +1,13 @@
+{
+  "title": "Google Pubsub",
+  "description": "Interact with Google Pub-Sub API",
+  "credentials": {
+    "fields": {
+      "name": {
+        "label": "My API Key",
+        "required": true,
+        "viewClass": "TextFieldView"
+      }
+    }
+  }
+}
