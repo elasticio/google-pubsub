@@ -7,6 +7,12 @@
   ],
   "credentials": {
     "fields": {
+      "projectId": {
+        "label": "Project ID",
+        "viewClass": "TextFieldView",
+        "placeholder": "Your google project ID",
+        "required": true
+      },
       "client_email": {
         "label": "SA Client Email",
         "viewClass": "TextFieldView",
