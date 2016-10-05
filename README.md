@@ -33,6 +33,17 @@ Now we are ready to push it:
 $ git push elasticio master
 ```
 
+## How authentication works
+
+PubSub component authentication works with 
+[Google IAM Service Accounts](https://developers.google.com/identity/protocols/OAuth2ServiceAccount) 
+and two-legged OAuth, in order to authenticate your component you would 
+need to create a new Service Account on [Service Accounts Page](https://console.developers.google.com/permissions/serviceaccounts)
+ of your project and download the JSON file with the private key.
+ You would need ``client_email`` and ``private_key`` values 
+ on component authentication page (see [here](https://github.com/google/google-api-nodejs-client#using-jwt-service-tokens)
+ for more information).
+
 ## License
 
 Apache-2.0 © [elastic.io GmbH](http://elastic.io)

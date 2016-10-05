@@ -1,23 +1,32 @@
 {
   "title": "Google Pubsub",
   "description": "Interact with Google Pub-Sub API",
+  "env": [
+    "GOOGLE_APP_ID",
+    "GOOGLE_APP_SECRET"
+  ],
   "credentials": {
     "fields": {
-      "name": {
-        "label": "My API Key",
-        "required": true,
-        "viewClass": "TextFieldView"
+      "client_email": {
+        "label": "SA Client Email",
+        "viewClass": "TextFieldView",
+        "required": true
+      },
+      "private_key": {
+        "label": "SA Private Key",
+        "viewClass": "TextAreaView",
+        "required": true
       }
     }
-  },
-  "actions": {
-    "pub": {
-      "title": "Pub",
-      "main": "./lib/actions/pub.js",
-      "metadata": {
-        "in": "./lib/schemas/pub.in.json",
-        "out": "./lib/schemas/pub.out.json"
+    },
+    "actions": {
+      "pub": {
+        "title": "Pub",
+        "main": "./lib/actions/pub.js",
+        "metadata": {
+          "in": "./lib/schemas/pub.in.json",
+          "out": "./lib/schemas/pub.out.json"
+        }
       }
     }
   }
-}
