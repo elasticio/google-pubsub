@@ -27,7 +27,7 @@
     },
     "actions": {
       "pub": {
-        "title": "Pub",
+        "title": "Publish",
         "main": "./lib/actions/pub.js",
         "fields": {
           "topicName": {
@@ -38,8 +38,15 @@
           }
         },
         "metadata": {
-          "in": {},
-          "out": {}
+          "out": {
+            "type": "object",
+            "properties": {
+              "MessageId": {
+                "type": "string",
+                "required": true
+              }
+            }
+          }
         }
       }
     }
