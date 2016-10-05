@@ -1,4 +1,4 @@
-# google-pubsub-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# google-pubsub [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Interact with Google Pub-Sub API
 
 # google-pubsub-component
@@ -51,7 +51,7 @@ Apache-2.0 © [elastic.io GmbH](http://elastic.io)
 
 [npm-image]: https://badge.fury.io/js/google-pubsub.svg
 [npm-url]: https://npmjs.org/package/google-pubsub
-[travis-image]: https://travis-ci.org/elastcio/google-pubsub.svg?branch=master
-[travis-url]: https://travis-ci.org/elastcio/google-pubsub
-[daviddm-image]: https://david-dm.org/elastcio/google-pubsub.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/elastcio/google-pubsub
+[travis-image]: https://travis-ci.org/elasticio/google-pubsub.svg?branch=master
+[travis-url]: https://travis-ci.org/elasticio/google-pubsub
+[daviddm-image]: https://david-dm.org/elasticio/google-pubsub.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/elasticio/google-pubsub
