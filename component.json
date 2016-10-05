@@ -29,6 +29,14 @@
       "pub": {
         "title": "Pub",
         "main": "./lib/actions/pub.js",
+        "fields": {
+          "topicName": {
+            "label": "Topic Name",
+            "viewClass": "TextFieldView",
+            "placeholder": "projects/elasticio-test-project/topics/test",
+            "required": true
+          }
+        },
         "metadata": {
           "in": {},
           "out": {}
