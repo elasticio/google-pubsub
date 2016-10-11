@@ -54,6 +54,7 @@
     "pub": {
       "title": "Subscribe",
       "main": "./lib/triggers/pull.js",
+      "type": "polling",
       "fields": {
         "topicName": {
           "label": "Topic Name",
