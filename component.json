@@ -24,30 +24,55 @@
         "required": true
       }
     }
-    },
-    "actions": {
-      "pub": {
-        "title": "Publish",
-        "main": "./lib/actions/pub.js",
-        "fields": {
-          "topicName": {
-            "label": "Topic Name",
-            "viewClass": "TextFieldView",
-            "placeholder": "projects/elasticio-test-project/topics/test",
-            "required": true
+  },
+  "actions": {
+    "pub": {
+      "title": "Publish",
+      "main": "./lib/actions/pub.js",
+      "fields": {
+        "topicName": {
+          "label": "Topic Name",
+          "viewClass": "TextFieldView",
+          "placeholder": "projects/elasticio-test-project/topics/test",
+          "required": true
+        }
+      },
+      "metadata": {
+        "out": {
+          "type": "object",
+          "properties": {
+            "MessageId": {
+              "type": "string",
+              "required": true
+            }
           }
-        },
-        "metadata": {
-          "out": {
-            "type": "object",
-            "properties": {
-              "MessageId": {
-                "type": "string",
-                "required": true
-              }
+        }
+      }
+    }
+  },
+  "triggers": {
+    "pub": {
+      "title": "Subscribe",
+      "main": "./lib/triggers/pull.js",
+      "fields": {
+        "topicName": {
+          "label": "Topic Name",
+          "viewClass": "TextFieldView",
+          "placeholder": "projects/elasticio-test-project/topics/test",
+          "required": true
+        }
+      },
+      "metadata": {
+        "out": {
+          "type": "object",
+          "properties": {
+            "MessageId": {
+              "type": "string",
+              "required": true
             }
           }
         }
       }
     }
   }
+}
