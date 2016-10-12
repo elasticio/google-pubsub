@@ -51,7 +51,7 @@
     }
   },
   "triggers": {
-    "pub": {
+    "subscribe": {
       "title": "Subscribe",
       "main": "./lib/triggers/pull.js",
       "type": "polling",
