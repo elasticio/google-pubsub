@@ -21,13 +21,13 @@
   ],
   "dependencies": {
     "elasticio-node": "0.0.8",
-    "elasticio-sailor-nodejs": "2.1.0",
-    "google-cloud": "^0.52.0",
+    "elasticio-sailor-nodejs": "2.1.6",
+    "google-cloud": "^0.56.0",
     "q": "^1.4.1"
   },
   "devDependencies": {
-    "eslint": "^2.1.0",
-    "eslint-config-xo-space": "^0.10.0"
+    "eslint": "^4.2.0",
+    "eslint-config-xo-space": "^0.16.0"
   },
   "eslintConfig": {
     "extends": "xo-space",
@@ -35,7 +35,9 @@
       "mocha": true
     }
   },
-  "engines" : { "node" : ">0.12" },
+  "engines": {
+    "node": ">8.1.3"
+  },
   "repository": "elastcio/google-pubsub-component",
   "license": "Apache-2.0"
 }
