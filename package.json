@@ -25,7 +25,7 @@
   "dependencies": {
     "elasticio-node": "0.0.9",
     "elasticio-sailor-nodejs": "2.6.7",
-    "@google-cloud/pubsub": "1.7.3",
+    "@google-cloud/pubsub": "0.22.2",
     "q": "1.4.1"
   },
   "devDependencies": {
