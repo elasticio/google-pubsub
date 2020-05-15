@@ -21,7 +21,10 @@
   ],
   "scripts": {
     "pretest": "eslint lib spec-integration verifyCredentials.js --fix",
-    "test": "mocha spec-integration/** --timeout 5000"
+    "test": "mocha spec/** --timeout 5000"
+  },
+  "engines": {
+    "node": ">=12.13.0"
   },
   "dependencies": {
     "elasticio-node": "0.0.9",
@@ -40,9 +43,6 @@
     "eslint-plugin-import": "2.14.0",
     "mocha": "7.1.2",
     "sinon": "9.0.2"
-  },
-  "engines": {
-    "node": ">=12.13.0"
   },
   "repository": "elastcio/google-pubsub",
   "license": "Apache-2.0"
