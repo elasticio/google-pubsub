@@ -1,7 +1,9 @@
 # Google PubSub [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 ## Description
 
-Interact with Google Pub-Sub API.
+The component interacts with Google Pub-Sub API. The API is an asynchronous messaging service that decouples services that produce events from services that process events.
+
+Pub/Sub offers durable message storage and real-time message delivery with high availability and consistent performance at scale. Pub/Sub servers run in all Google Cloud regions around the world.
 
 ## How authentication works
 
@@ -13,6 +15,18 @@ need to create a new Service Account on [Service Accounts Page](https://console.
  You would need ``client_email`` and ``private_key`` values
  on component authentication page (see [here](https://github.com/google/google-api-nodejs-client#using-jwt-service-tokens)
  for more information).
+
+## Triggers
+
+## Pull
+
+The Pull trigger receives a message, emits it, and sends an acknowledgment to Pub/Sub.
+
+## Actions
+
+### Publish
+
+The Publish action retrieves message body from the previous step and sends a message to Pub/Sub while remaining unaware of any existing subscriptions. The action also assigns a message ID.
 
 ## Warning
 
