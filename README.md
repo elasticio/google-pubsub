@@ -26,7 +26,7 @@ The Pull trigger receives a message, emits it, and sends an acknowledgment to Pu
 
 ### Publish
 
-The Publish action retrieves message body from the previous step and sends a message to Pub/Sub while remaining unaware of any existing subscriptions. The action also assigns a message ID.
+The Publish action retrieves message and sends a message to Pub/Sub while remaining unaware of any existing subscriptions. The action also assigns a message ID.
 
 ## Warning
 
