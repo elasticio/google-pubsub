@@ -4,11 +4,14 @@ const sinon = require('sinon');
 const logger = require('@elastic.io/component-logger')();
 const verifyCredentials = require('../verifyCredentials');
 
-describe('verifyCredentials', () => {
+// eslint-disable-next-line func-names
+describe('verifyCredentials', function () {
   if (fs.existsSync('.env')) {
     // eslint-disable-next-line global-require
     require('dotenv').config();
   }
+
+  this.timeout(10000);
 
   const self = {
     emit: sinon.spy(),

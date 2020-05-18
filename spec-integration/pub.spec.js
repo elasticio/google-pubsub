@@ -4,11 +4,14 @@ const sinon = require('sinon');
 const logger = require('@elastic.io/component-logger')();
 const publish = require('../lib/actions/pub');
 
-describe('publish action', () => {
+// eslint-disable-next-line func-names
+describe('publish action', function () {
   if (fs.existsSync('.env')) {
     // eslint-disable-next-line global-require
     require('dotenv').config();
   }
+
+  this.timeout(5000);
 
   const self = {
     emit: sinon.spy(),

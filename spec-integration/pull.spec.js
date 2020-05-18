@@ -6,11 +6,13 @@ const publish = require('../lib/actions/pub');
 const pull = require('../lib/triggers/pull');
 
 // eslint-disable-next-line func-names
-describe('pull trigger', () => {
+describe('pull trigger', function () {
   if (fs.existsSync('.env')) {
     // eslint-disable-next-line global-require
     require('dotenv').config();
   }
+
+  this.timeout(5000);
 
   const self = {
     emit: sinon.spy(),
