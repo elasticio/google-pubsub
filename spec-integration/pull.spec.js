@@ -12,7 +12,7 @@ describe('pull trigger', function () {
     require('dotenv').config();
   }
 
-  this.timeout(5000);
+  this.timeout(30000);
 
   const self = {
     emit: sinon.spy(),
