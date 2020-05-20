@@ -41,7 +41,7 @@ describe('pull trigger', function () {
 
   it('should pull data', async () => {
     await pull.process.call(self, msg, cfg);
-    const result = self.emit.getCall(0).args[1];
-    expect(result.body).to.have.a.property('messageID');
+    const result = self.emit.getCall(2).args[1];
+    expect(result.body).to.have.a.property('body');
   });
 });
