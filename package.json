@@ -30,7 +30,6 @@
     "elasticio-node": "0.0.9",
     "elasticio-sailor-nodejs": "2.6.7",
     "@google-cloud/pubsub": "1.7.3",
-    "q": "1.4.1",
     "@elastic.io/component-logger": "0.0.1"
   },
   "devDependencies": {
