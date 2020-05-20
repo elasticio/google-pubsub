@@ -40,6 +40,6 @@ describe('publish action', function () {
   it('should publish data', async () => {
     await publish.process.call(self, msg, cfg);
     const result = self.emit.getCall(0).args[1];
-    expect(result.body[0]).to.have.a.key('messageID');
+    expect(result.body).to.have.a.key('messageID');
   });
 });
