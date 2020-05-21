@@ -1,7 +1,7 @@
-## 1.7.0 (May 12, 2020)
+## 1.7.0 (May 22, 2020)
 
 * Update Sailor version to 2.6.7
-* Migrate to @google-cloud/pubsub library
+* Migrate to the latest @google-cloud/pubsub library
 * Fix code style
 
 ## 1.6.0 (October 12, 2018)
