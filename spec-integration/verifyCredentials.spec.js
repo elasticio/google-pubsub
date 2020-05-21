@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { expect } = require('chai');
 const sinon = require('sinon');
+const logger = require('@elastic.io/component-logger')();
 const verifyCredentials = require('../verifyCredentials');
 
 // eslint-disable-next-line func-names
@@ -14,6 +15,7 @@ describe('verifyCredentials', function () {
 
   const self = {
     emit: sinon.spy(),
+    logger,
   };
 
   const cfg = {
