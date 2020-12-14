@@ -1,4 +1,6 @@
-# Google PubSub [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+[![CircleCI](https://circleci.com/gh/elasticio/google-pubsub.svg?style=svg)](https://circleci.com/gh/elasticio/google-pubsub)
+
+# Google PubSub 
 ## Description
 
 The component interacts with Google Pub-Sub API. The API is an asynchronous messaging service that decouples services that produce events from services that process events.
@@ -55,7 +57,3 @@ Apache-2.0 © [elastic.io GmbH](http://elastic.io)
 
 [npm-image]: https://badge.fury.io/js/google-pubsub.svg
 [npm-url]: https://npmjs.org/package/google-pubsub
-[travis-image]: https://travis-ci.org/elasticio/google-pubsub.svg?branch=master
-[travis-url]: https://travis-ci.org/elasticio/google-pubsub
-[daviddm-image]: https://david-dm.org/elasticio/google-pubsub.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/elasticio/google-pubsub
