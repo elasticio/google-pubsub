@@ -1,6 +1,6 @@
 {
   "name": "google-pubsub-component",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Interact with Google Pub-Sub API",
   "homepage": "https://www.elastic.io",
   "author": {
@@ -24,11 +24,11 @@
     "test": "mocha spec/** --timeout 5000"
   },
   "engines": {
-    "node": ">=12.13.0"
+    "node": "14"
   },
   "dependencies": {
     "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "2.6.7",
+    "elasticio-sailor-nodejs": "2.6.21",
     "@google-cloud/pubsub": "2.0.0"
   },
   "devDependencies": {

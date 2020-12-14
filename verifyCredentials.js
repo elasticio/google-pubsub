@@ -4,7 +4,6 @@ const { PubSub } = require('@google-cloud/pubsub');
 module.exports = async function verifyCredentials(cfg) {
   const self = this;
   self.logger.info('Start verifying credentials');
-  self.logger.debug('Current credentials: %j', cfg);
   const { projectId, client_email, private_key } = cfg;
   let topics;
   let result = { verified: true };
@@ -21,13 +20,12 @@ module.exports = async function verifyCredentials(cfg) {
   async function listAllTopics() {
     // Lists all topics in the current project
     [topics] = await pubSubClient.getTopics();
-    self.logger.debug('Topics:');
-    topics.forEach(topic => self.logger.debug(topic.name));
+    self.logger.debug('Topics received');
     return topics;
   }
 
-  await listAllTopics().catch((err) => {
-    self.logger.error(err);
+  await listAllTopics().catch(() => {
+    self.logger.error('Error during retrieving topics occurred');
     result = { verified: false };
   });
 
