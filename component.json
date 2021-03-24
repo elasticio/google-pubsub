@@ -29,6 +29,7 @@
   "actions": {
     "pub": {
       "title": "Publish",
+      "note":"The Publish action retrieves message body from a previous step and sends a message to a Topic while remaining unaware of any existing subscriptions.",
       "main": "./lib/actions/pub.js",
       "fields": {
         "topicName": {
@@ -54,6 +55,7 @@
   "triggers": {
     "subscribe": {
       "title": "Subscribe",
+      "note":"The Subscribe trigger receives a message from a Topic, emits it, and sends an acknowledgment to Pub/Sub.",
       "main": "./lib/triggers/pull.js",
       "type": "polling",
       "fields": {

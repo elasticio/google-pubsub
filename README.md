@@ -10,7 +10,7 @@
       * [Core concepts](#core-concepts)
 * [Credentials](#credentials)
 * [Triggers](#triggers)
-   * [Pull](#pull)
+   * [Subscribe](#subscribe)
 * [Actions](#actions)
    * [Publish](#publish)
 * [Additional info](#additional-info)
@@ -44,9 +44,9 @@ need to create a new Service Account on [Service Accounts Page](https://console.
 
 ## Triggers
 
-### Pull
+### Subscribe
 
-The Pull trigger receives a message from a Topic, emits it, and sends an acknowledgment to Pub/Sub.
+The Subscribe trigger receives a message from a Topic, emits it, and sends an acknowledgment to Pub/Sub.
 
 #### Configuration
 
