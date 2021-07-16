@@ -1,8 +1,6 @@
 # 1.7.3 (July 16, 2021)
 * Fix bug with not-awaited emits and endless cycle problem
 * Bump dependencies
-* nyc integration for tests
-* Added version to `component` and removed from `package`
 
 # 1.7.2 (March 25, 2021)
 
