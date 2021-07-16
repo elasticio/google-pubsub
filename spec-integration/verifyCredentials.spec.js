@@ -11,7 +11,7 @@ describe('verifyCredentials', function () {
     require('dotenv').config();
   }
 
-  this.timeout(10000);
+  this.timeout(100000);
 
   const self = {
     emit: sinon.spy(),
@@ -44,7 +44,6 @@ describe('verifyCredentials', function () {
   });
 
   it('should fail required params are missing', async () => {
-    cfg.client_email = 'client@email.com';
     const result = await verifyCredentials.call(self, { client_email: 'client@email.com' });
     expect(result).to.deep.equal({ verified: false });
   });

@@ -1,3 +1,10 @@
+# 1.7.3 (July 16, 2021)
+* Added `await` into `Publish` action
+* Removed endless cycle in `Subscribe` trigger
+* Bump dependencies
+* nyc integration for tests
+* Added version to `component` and romoved from `package`
+
 # 1.7.2 (March 25, 2021)
 
 * Update Sailor version to 2.6.24
