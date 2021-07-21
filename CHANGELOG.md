@@ -1,3 +1,7 @@
+# 1.7.3 (July 23, 2021)
+* Fix bug with not-awaited emits and endless cycle problem
+* Bump dependencies
+
 # 1.7.2 (March 25, 2021)
 
 * Update Sailor version to 2.6.24
