@@ -1,4 +1,4 @@
-# 1.7.3 (July 16, 2021)
+# 1.7.3 (July 23, 2021)
 * Fix bug with not-awaited emits and endless cycle problem
 * Bump dependencies
 
