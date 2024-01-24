@@ -11,6 +11,7 @@
 * [Credentials](#credentials)
 * [Triggers](#triggers)
    * [Subscribe](#subscribe)
+   * [Deprecated triggers](#deprecated-triggers)
 * [Actions](#actions)
    * [Publish](#publish)
 * [Additional info](#additional-info)
@@ -50,7 +51,37 @@ The Subscribe trigger receives a message from a Topic, emits it, and sends an ac
 
 #### Configuration
 
+- `Select topic to subscribe` - (dropdown, required): Select one of the available topics from the list
+
+#### Input Metadata
+
+None.
+
+#### Output Metadata
+
+* **data** - (object or string, required): Data of the message, the component will try to parse it as JSON object, if fails - result will be plain text
+* **attributes** - (object, optional): Attributes for this message - a list of `"key": value` pairs
+* **id** - (string, required): ID of this message, assigned by the server when the message is published
+* **publishTime** - (string, required): The time at which the message was published to Google Pub-Sub server
+* **received** - (string, required): The time at which the message was read by the component
+
+#### Limitations:
+* If you use ordinary flow (`real-time` not enabled) after flow starts you will need to run it once (make execution) to create a subscription in Google Pub-Sub
+
+### Deprecated triggers
+
+<details> 
+  <summary>Subscribe</summary>
+
+### Subscribe
+
+The Subscribe trigger receives a message from a Topic, emits it, and sends an acknowledgment to Pub/Sub.
+
+#### Configuration
+
 - `Topic Name` - (required field) fully-qualified topic resource name string, e.g. `projects/<project_id>/topics/<topic_name>`
+
+</details>
 
 ## Actions
 
