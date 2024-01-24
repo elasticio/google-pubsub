@@ -1,3 +1,7 @@
+# 1.8.0 (January 25, 2024)
+* Added new `Subscribe` trigger (old one set as deprecated) 
+* Bump dependencies
+
 # 1.7.3 (July 23, 2021)
 * Fix bug with not-awaited emits and endless cycle problem
 * Bump dependencies

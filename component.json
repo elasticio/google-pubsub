@@ -2,7 +2,7 @@
   "title": "Google Pubsub",
   "description": "Interact with Google Pub-Sub API",
   "buildType": "docker",
-  "version": "1.7.4-dev.20",
+  "version": "1.8.0-dev.20",
   "env": [
     "GOOGLE_APP_ID",
     "GOOGLE_APP_SECRET"
