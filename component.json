@@ -2,7 +2,7 @@
   "title": "Google Pubsub",
   "description": "Interact with Google Pub-Sub API",
   "buildType": "docker",
-  "version": "1.7.3",
+  "version": "1.8.0",
   "env": [
     "GOOGLE_APP_ID",
     "GOOGLE_APP_SECRET"
@@ -30,7 +30,7 @@
   "actions": {
     "pub": {
       "title": "Publish",
-      "note":"The Publish action retrieves message body from a previous step and sends a message to a Topic while remaining unaware of any existing subscriptions.",
+      "note": "The Publish action retrieves message body from a previous step and sends a message to a Topic while remaining unaware of any existing subscriptions.",
       "main": "./lib/actions/pub.js",
       "fields": {
         "topicName": {
@@ -55,10 +55,11 @@
   },
   "triggers": {
     "subscribe": {
-      "title": "Subscribe",
-      "note":"The Subscribe trigger receives a message from a Topic, emits it, and sends an acknowledgment to Pub/Sub.",
+      "title": "Subscribe (deprecated)",
+      "note": "The Subscribe trigger receives a message from a Topic, emits it, and sends an acknowledgment to Pub/Sub.",
       "main": "./lib/triggers/pull.js",
       "type": "polling",
+      "deprecated": true,
       "fields": {
         "topicName": {
           "label": "Topic Name",
@@ -66,14 +67,41 @@
           "placeholder": "projects/elasticio-test-project/topics/test",
           "required": true
         }
+      }
+    },
+    "newSubscribe": {
+      "title": "Subscribe",
+      "note": "The Subscribe trigger receives a message from a Topic, emits it, and sends an acknowledgment to Pub/Sub.",
+      "main": "./lib/triggers/subscribe.js",
+      "type": "polling",
+      "fields": {
+        "topic": {
+          "label": "Select topic to subscribe",
+          "viewClass": "SelectView",
+          "required": false,
+          "model": "getTopicsList"
+        }
       },
       "metadata": {
         "out": {
           "type": "object",
           "properties": {
-            "MessageId": {
-              "type": "string",
-              "required": true
+            "id": {
+              "type": "string"
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {}
+            },
+            "data": {
+              "type": "object",
+              "properties": {}
+            },
+            "publishTime": {
+              "type": "string"
+            },
+            "received": {
+              "type": "string"
             }
           }
         }

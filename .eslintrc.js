@@ -1,5 +1,6 @@
 module.exports = {
   extends: 'airbnb-base',
+  parser: 'babel-eslint',
   env: {
     mocha: true,
   },
@@ -8,12 +9,13 @@ module.exports = {
     'no-useless-constructor': 'off',
     'max-classes-per-file': 'off',
     'class-methods-use-this': 'off',
-    'no-unused-vars': ['error', { args: 'none'}],
+    'no-unused-vars': ['error', { args: 'none' }],
     'no-plusplus': 'off',
     'no-await-in-loop': 'off',
     'guard-for-in': 'off',
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
     'import/prefer-default-export': 'off',
     'import/extensions': 'off',
+    'object-curly-newline': 0,
   },
 };
