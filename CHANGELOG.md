@@ -1,4 +1,4 @@
-# 1.8.0 (January 25, 2024)
+# 1.8.0 (January 29, 2024)
 * Added new `Subscribe` trigger (old one set as deprecated) 
 * Bump dependencies
 
