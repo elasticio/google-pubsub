@@ -66,7 +66,8 @@ None.
 * **received** - (string, required): The time at which the message was read by the component
 
 #### Limitations:
-* If you use ordinary flow (`real-time` not enabled) after flow starts you will need to run it once (make execution) to create a subscription in Google Pub-Sub
+* If you use ordinary flow (Real-time functionality is not enabled) after flow starts you will need to run it once (make execution) to create a subscription in Google Pub-Sub.
+* Due to API limitations, once the user clicks `Run Now` after the SUSPENDED state, all stored messages in the queues will be processed, but not in the order they were received.
 
 ### Deprecated triggers
 
